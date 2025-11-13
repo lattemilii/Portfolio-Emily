@@ -4,11 +4,11 @@ export default function Navbar() {
                     bg-[#A65E89]/35 backdrop-blur-md 
                     rounded-full">
       <nav className="flex items-center justify-center space-x-8 sm:space-x-12 md:space-x-16">
-        <a href="#home" className="text-[#C37EA8] text-center hover:text-[#E5A6C4] cursor-pointer">Home</a>
-        <a href="#about" className="text-[#C37EA8] text-center hover:text-[#E5A6C4] cursor-pointer">About Me</a>
-        <a href="#skills" className="text-[#C37EA8] text-center hover:text-[#E5A6C4] cursor-pointer">Skills</a>
-        <a href="#projects" className="text-[#C37EA8] text-center hover:text-[#E5A6C4] cursor-pointer">Projects</a>
-        <a href="#contact" className="text-[#C37EA8] text-center hover:text-[#E5A6C4] cursor-pointer">Contact</a>
+        <a href="#home" className="text-primary-foreground text-center hover:text-[#E5A6C4] cursor-pointer">Home</a>
+        <a href="#about" className="text-primary-foreground text-center hover:text-[#E5A6C4] cursor-pointer">About Me</a>
+        <a href="#skills" className="text-primary-foreground text-center hover:text-[#E5A6C4] cursor-pointer">Skills</a>
+        <a href="#projects" className="text-primary-foreground text-center hover:text-[#E5A6C4] cursor-pointer">Projects</a>
+        <a href="#contact" className="text-primary-foreground text-center hover:text-[#E5A6C4] cursor-pointer">Contact</a>
       </nav>
     </div>
   );
