@@ -17,14 +17,15 @@ const ProjectCard = ({ title, description, images = [], tags = [] }: ProjectCard
   const prev = () => setIndex((i) => (i - 1 + images.length) % images.length);
 
   return (
-    <Card className="group overflow-hidden hover:shadow-lg transition bg-accent/10">
-      <div className="aspect-video relative bg-muted/30">
+    <Card className="group overflow-hidden hover:shadow-lg transition bg-accent/10 rounded-xl">
+      {/* Image Section */}
+      <div className="relative w-full aspect-video bg-muted/30 overflow-hidden">
         {images.length > 0 ? (
           <>
             <img
               src={images[index]}
               alt=""
-              className="w-full h-full object-cover transition group-hover:scale-105"
+              className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
             />
 
             {images.length > 1 && (
@@ -32,14 +33,14 @@ const ProjectCard = ({ title, description, images = [], tags = [] }: ProjectCard
                 {/* Left / Right Buttons */}
                 <button
                   onClick={(e) => { e.preventDefault(); prev(); }}
-                  className="absolute top-1/2 left-2 -translate-y-1/2 p-1 bg-black/50 hover:bg-black/70 text-white rounded-full transition opacity-0 group-hover:opacity-100"
+                  className="absolute top-1/2 left-2 -translate-y-1/2 p-2 bg-black/50 hover:bg-black/70 text-white rounded-full transition-opacity opacity-0 group-hover:opacity-100"
                 >
                   <ChevronLeft className="w-5 h-5" />
                 </button>
 
                 <button
                   onClick={(e) => { e.preventDefault(); next(); }}
-                  className="absolute top-1/2 right-2 -translate-y-1/2 p-1 bg-black/50 hover:bg-black/70 text-white rounded-full transition opacity-0 group-hover:opacity-100"
+                  className="absolute top-1/2 right-2 -translate-y-1/2 p-2 bg-black/50 hover:bg-black/70 text-white rounded-full transition-opacity opacity-0 group-hover:opacity-100"
                 >
                   <ChevronRight className="w-5 h-5" />
                 </button>
@@ -50,8 +51,8 @@ const ProjectCard = ({ title, description, images = [], tags = [] }: ProjectCard
                     <button
                       key={i}
                       onClick={() => setIndex(i)}
-                      className={`h-2 rounded-full transition ${
-                        index === i ? "bg-primary w-1" : "bg-white/40 w-2"
+                      className={`h-2 rounded-full transition-all ${
+                        index === i ? "bg-primary w-4" : "bg-white/40 w-2"
                       }`}
                     />
                   ))}
@@ -66,16 +67,20 @@ const ProjectCard = ({ title, description, images = [], tags = [] }: ProjectCard
         )}
       </div>
 
-      <CardHeader>
+      {/* Text Section */}
+      <CardHeader className="pt-4">
         <CardTitle className="text-xl text-primary">{title}</CardTitle>
         <CardDescription className="text-accent">{description}</CardDescription>
       </CardHeader>
 
+      {/* Tags */}
       {tags.length > 0 && (
-        <CardContent>
+        <CardContent className="pt-2">
           <div className="flex flex-wrap gap-2">
             {tags.map((tag, i) => (
-              <Badge key={i} variant="secondary" className="text-white">{tag}</Badge>
+              <Badge key={i} variant="secondary" className="text-white">
+                {tag}
+              </Badge>
             ))}
           </div>
         </CardContent>

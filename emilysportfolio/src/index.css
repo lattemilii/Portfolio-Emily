@@ -10,27 +10,27 @@
 
   color-scheme: light dark;
   color: #C37EA8;
-  background: radial-gradient(circle at center, #F1C7D4 0%, #FFF2F6 100%);
+  background: var(--background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --radius: 0.625rem;
-  --background: radial-gradient(circle at center, #F1C7D4 0%, #FFF2F6 100%);
+  --background: radial-gradient(circle at center, oklch(71.11% 0.045 264.87) 0%,oklch(63.90% 0.069 247.59)  100%);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(67.75% 0.101 342.93);
-  --primary-foreground: oklch(43.00% 0.130 330.96);
-  --secondary: oklch(65.908% 0.1152 344.138);
-  --secondary-foreground: oklch(0.205 0 0);
+  --primary: oklch(32.76% 0.080 243.32);
+  --primary-foreground: oklch(29.257% 0.06665 242.133);
+  --secondary: oklch(19.60% 0.051 249.03);
+  --secondary-foreground: oklch(18.197% 0.04065 248.437);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent:oklch(57.78% 0.108 344.32);
-  --accent-foreground: oklch(0.205 0 0);
+  --accent:oklch(49.833% 0.08505 253.005);
+  --accent-foreground: oklch(34.056% 0.07554 253.722);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
@@ -54,7 +54,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #a9668f;
+  color: var(--accent-foreground);
 }
 
 h1 {
@@ -69,12 +69,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #762f70;
+  background-color: var(--primary-foreground);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #a9668f;
+  border-color: var(--primary);
 }
 button:focus,
 button:focus-visible {
