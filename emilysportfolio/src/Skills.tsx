@@ -3,9 +3,9 @@ import { Card } from '@/components/ui/card';
 function Skills() {
   return (
     <section id="skills" className="flex flex-col items-center justify-center min-h-screen px-4 py-12">
-      <h1 className="text-4xl md:text-5xl font-bold mb-12 text-primary">Skills</h1>
+      <h1 className="text-4xl md:text-5xl font-bold mt-8 mb-12 md:mt-10 text-primary">Skills</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8  max-w-6xl">
         
         <div className="flex flex-col space-y-4">
           <h2 className="text-3xl font-semibold mb-2 text-primary">Hard Skills</h2>
@@ -16,7 +16,7 @@ function Skills() {
           </Card>
 
           <Card className="p-5 bg-accent/10 h-full">
-            <h3 className="text-2xl font-bold mb-2 text-secondary">Data Engineering</h3>
+            <h3 className="text-2xl font-bold mb-2 text-secondary">Database</h3>
             <p className="text-secondary">SQL, PostgreSQL</p>
           </Card>
 
