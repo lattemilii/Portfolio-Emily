@@ -19,7 +19,7 @@ function Hero() {
                             </p>
                             <div className="flex justify-center md:justify-start mb-8 md:mb-0">
                                 <button onClick={downloadCV} aria-label="Download CV" className="button text-tags-text inline-flex items-center justify-center px-4 py-2">
-                                    My CV
+                                    Download My CV <img src="/Download.png" alt="Download Icon" className="ml-2 w-6 h-6" />
                                 </button>
                             </div>
                         </div>
