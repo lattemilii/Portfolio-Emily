@@ -11,7 +11,7 @@ import Navbar from './components/Navbar.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div className='relative min-h-screen'>
-      <div className="absolute inset-0 bg-[url('/paper.jpg')] bg-cover opacity-30 mix-blend-multiply pointer-events-none"/>  
+      <div className="absolute inset-0 bg-[url('/paper.jpg')] bg-cover opacity-45 mix-blend-multiply"/>  
         <div className='relative z-10'>
           <Navbar />
           <Hero />
