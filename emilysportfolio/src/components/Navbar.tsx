@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-full sm:max-w-fit px-3 sm:px-4  py-1.5
+    <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-11/12  max-w-full sm:max-w-fit  px-3  sm:px-4  py-1.5
                     bg-accent/35 backdrop-blur-md
                     rounded-full">
       <nav className="flex flex-wrap items-center justify-center gap-4 sm:gap-4 md:gap-4 lg:gap-6 text-lg">

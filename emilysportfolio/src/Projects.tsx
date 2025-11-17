@@ -2,9 +2,9 @@ import ProjectCard from "./components/ProjectCard";
 
 function Projects() {
   return (
-    <section id="projects" className="min-h-screen mx-8 md:mx-28 py-20">
+    <section id="projects" className="min-h-screen mx-8 md:mx-28 py-12">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-primary">Projects</h1>
+        <h1 className="text-4xl font-bold text-primary mt-18 md:mt-10">Projects</h1>
         <p className="text-secondary mt-2">
           These are the projects I've worked on in university
         </p>
