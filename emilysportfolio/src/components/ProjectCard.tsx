@@ -17,7 +17,7 @@ const ProjectCard = ({ title, description, images = [], tags = [] }: ProjectCard
   const prev = () => setIndex((i) => (i - 1 + images.length) % images.length);
 
   return (
-    <Card className="group overflow-hidden hover:shadow-lg transition bg-accent/10 rounded-xl hover:scale-[1.02]">
+    <Card className="group overflow-hidden hover:shadow-lg transition bg-foreground/20 rounded-xl hover:scale-[1.02]">
       {/*Image*/}
       <div className="relative w-full h-auto bg-muted/30 overflow-hidden">
         {images.length > 0 ? (

@@ -17,7 +17,7 @@
   -moz-osx-font-smoothing: grayscale;
   --radius: 0.625rem;
   --background: radial-gradient(circle at center, oklch(77.465% 0.04618 264.279) 0%,oklch(69.351% 0.07013 246.923)  100%);
-  --foreground: oklch(0.145 0 0);
+  --foreground: oklch(74.337% 0.07976 236.601);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
