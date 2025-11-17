@@ -8,9 +8,9 @@ function Skills() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-0 max-w-6xl">
         
         <div className="flex flex-col space-y-4">
-          <h2 className="text-3xl font-semibold mb-2 text-primary">Hard Skills</h2>
+          <h2 className="text-3xl font-semibold mb-2 text-primary z-10">Hard Skills</h2>
 
-          <Card className="p-5 bg-foreground/20 h-full">
+          <Card className="p-5 bg-foreground/20 h-full z-10">
             <h3 className="text-2xl font-bold mb-2 text-secondary">Web Development</h3>
             <p className="text-secondary">HTML, CSS, Typescript, JavaScript, React, Tailwind CSS, Vite</p>
           </Card>
