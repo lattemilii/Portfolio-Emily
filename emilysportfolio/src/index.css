@@ -17,7 +17,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --radius: 0.625rem;
-  --background: radial-gradient(circle at center, oklch(71.11% 0.045 264.87) 0%,oklch(63.90% 0.069 247.59)  100%);
+  --background: radial-gradient(circle at center, oklch(77.465% 0.04618 264.279) 0%,oklch(69.351% 0.07013 246.923)  100%);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -87,11 +87,23 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
-  }
   button {
-    background-color: #f9f9f9;
+    border-radius: 24px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--primary-foreground);
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: var(--primary);
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
   }
 }
 
