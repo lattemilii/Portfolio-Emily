@@ -6,9 +6,16 @@ const Contact: React.FC = () => {
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log({ name, email, message });
-  };
+  e.preventDefault();
+
+  const mailtoLink = `mailto:emilygouw4@gmail.com?subject=Contact from ${name}&body=${encodeURIComponent(
+    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+  )}`;
+
+  window.location.href = mailtoLink;
+};
+
+  
 
   return (
     <section id="contact" className="relative flex flex-col items-center justify-center min-h-screen px-6  md:px-0">
