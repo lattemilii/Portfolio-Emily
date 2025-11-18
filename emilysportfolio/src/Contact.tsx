@@ -11,10 +11,10 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="relative flex flex-col items-center justify-center min-h-screen px-6 py-28 md:px-0">
+    <section id="contact" className="relative flex flex-col items-center justify-center min-h-screen px-6  md:px-0">
         <img src="/img/diamond/diamond.png" alt="diamond" className="absolute md:top-1 md:left-1  top-10 -left-10 w-50 h-50 md:w-80 md:h-80"/>
         <img src="/img/diamond/diamond.png" alt="diamond" className="absolute md:bottom-1 md:right-1  bottom-3 -right-10 w-50 h-50 md:w-80 md:h-80"/>
-      <h1 className="text-4xl font-bold mb-4 text-primary text-center z-10">
+      <h1 className="text-4xl font-bold mb-4 text-primary text-center md:mt-12 mt-26 z-10">
         Contact Me!
       </h1>
       <p className="text-secondary text-center mb-10 z-10">Let's get in touch</p>
