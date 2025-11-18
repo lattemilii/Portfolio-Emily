@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  font-family: 'Lexend', sans-serif;
+  font-family: 'Merriweather', serif;
   line-height: 1.5;
   font-weight: 400;
 

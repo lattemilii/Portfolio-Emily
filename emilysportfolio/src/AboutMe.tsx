@@ -1,8 +1,7 @@
 function AboutMe() {
     return(
         <>
-        <section id="about" className=" relative flex flex-col md:flex-row items-center justify-center min-h-screen sm:px-6 md:px-24  md:gap-12">
-            <img src="/img/diamond/diamond.png" alt="Diamond" className="absolute md:top-50 md:right-74 top-98 right-0.5 w-10 h-10 md:w-18 md:h-18"/>
+        <section id="about" className=" relative flex flex-col md:flex-row items-center justify-center min-h-screen sm:px-6 md:px-24  md:gap-12 -top-45">
             <img src="/img/stars/sparkle-1.png" alt="sparkle" className="absolute md:bottom-40 md:right-35 md:left-auto bottom-10 left-10 w-10 h-10 md:w-18 md:h-18"/>
             <img src="/img/flower/flower-2.png" alt="Flower" className="absolute -bottom-15 -left-12 md:left-auto md:-bottom-40 md:-right-30  w-40 h-40 md:w-100 md:h-100"/>
 

@@ -2,7 +2,14 @@ import ProjectCard from "./components/ProjectCard";
 
 function Projects() {
   return (
-    <section id="projects" className="min-h-screen mx-8 md:mx-28 py-12">
+    <section id="projects" className=" relative min-h-screen mx-8 md:mx-28 py-12 -top-35">
+      <img src="/img/diamond/diamond-1.png" alt="star" className="absolute md:top-15 md:right-87 top-23 right-1 w-15 h-15 md:w-17 md:h-17"/>
+      <img src="/img/stars/star-3.png" alt="star" className="absolute md:top-30 md:-left-30 top-58 -left-13 rotate-15 w-20 h-20 md:w-40 md:h-40"/>
+      <img src="/img/stars/star-1.png" alt="star" className="absolute md:-bottom-5 md:-right-25 bottom-5 -right-13 rotate-15 w-20 h-20 md:w-30 md:h-30"/>
+      <img src="/img/heart/heart.png" alt="heart" className="absolute md:top-60 md:-right-20 top-130 -right-7 rotate-15 w-10 h-10 md:w-10 md:h-10"/>
+      <img src="/img/heart/heart.png" alt="heart" className="absolute md:top-100 md:-left-20 top-250 -left-7 -rotate-15 w-10 h-10 md:w-10 md:h-10"/>
+      <img src="/img/flower/flower-1.png" alt="heart" className="absolute md:top-180 md:-right-20 top-340 -right-7 -rotate-15 w-10 h-10 md:w-10 md:h-10"/>
+      <img src="/img/flower/flower-3.png" alt="heart" className="absolute md:top-240 md:-left-20 top-440 -left-7 -rotate-15 w-10 h-10 md:w-10 md:h-10"/>
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-primary mt-18 md:mt-10">Projects</h1>
         <p className="text-secondary mt-2">
