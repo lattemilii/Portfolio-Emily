@@ -8,9 +8,10 @@ interface ProjectCardProps {
   description: string;
   images?: string[];
   tags?: string[];
+  repositoryUrl?: string;
 }
 
-const ProjectCard = ({ title, description, images = [], tags = [] }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, images = [], tags = [], repositoryUrl }: ProjectCardProps) => {
   const [index, setIndex] = useState(0);
 
   const next = () => setIndex((i) => (i + 1) % images.length);
@@ -75,6 +76,18 @@ const ProjectCard = ({ title, description, images = [], tags = [] }: ProjectCard
               </Badge>
             ))}
           </div>
+        </CardContent>
+      )}
+      
+      {repositoryUrl && (
+        <CardContent className="pt-2">
+          <a 
+            href={repositoryUrl}
+            target="_blank"
+            className="text-secondary font-medium hover:accent bg-primary/20 px-4 py-2 rounded-lg hover:bg-primary/30 transition"
+          >
+            View Repository
+          </a>
         </CardContent>
       )}
     </Card>

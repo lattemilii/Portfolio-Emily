@@ -26,6 +26,7 @@ function Projects() {
              "/./img/Lensz/2.png",
              "/./img/Lensz/3.png"]}  
           tags={["React", "TypeScript", "Shadcn", "Tailwind CSS", "PostgreSQL"]}
+          repositoryUrl="https://github.com/Petinggi-Teknik-Indonesia/lensz-client-web"
         />
 
         <ProjectCard
@@ -33,6 +34,7 @@ function Projects() {
           description="A hackathon project focused on sustainability, tracking energy consumption. Built using Next.js with Supabase integration."
           images={["/./img/FrugalWatt/1.png", "/./img/FrugalWatt/2.jpg", "/./img/FrugalWatt/3.png"]}
           tags={["Next.js", "Supabase", "Hackathon", "Shadcn", "Tailwind CSS"]}
+          repositoryUrl="https://github.com/Deswandy/Labubuntu"
         />
 
         <ProjectCard
@@ -43,6 +45,7 @@ function Projects() {
             "/./img/JualanMommy/3.png"
           ]}
           tags={["Laravel", "PHP Blade", "MySQL"]}
+          repositoryUrl="https://github.com/lattemilii/UAS-WEBPROG"
         />
 
         <ProjectCard
@@ -53,6 +56,7 @@ function Projects() {
              "/./img/MyUMN/2.png",
              "/./img/MyUMN/3.png"]}
           tags={["PHP", "MySQL"]}
+          repositoryUrl="https://github.com/lattemilii/UTS-WEBPROG"
         />
 
       </div>
